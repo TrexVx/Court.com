@@ -24,20 +24,36 @@ body {
 
 /* Header y navegación */
 header {
-    background-color:rgb(91, 2, 0);
-    color: rgb(0, 0, 0);
-    padding: 1rem 0;
+    background-color: #361313;
+    color: rgb(255, 255, 255);
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: -10px;
+    transition: top 0.3s;
+    z-index: 1000;
     text-align: center;
 }
- header h1 {
+header.visible {
+    top: 0;
+}
+header h1 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    margin: 0;
   }
   header h1 svg {
     flex-shrink: 0;
   }
+  main {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
+.content {
+    height: 2000px; /* Solo para demostración del scroll */
+}
+
 
 .nav-content {
     display: flex; /* Alineación horizontal */
@@ -49,14 +65,14 @@ header {
     font-family: 'Gotham', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffff00;
+    color: #ffffff;
     text-decoration: none;
 }
 .saed {
     font-family: 'Gotham', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffff00;
+    color: #ffffff;
     text-decoration: none;
 }
 .logo2 {
@@ -82,7 +98,7 @@ header {
     font-family: 'Gotham', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #ffff00;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -172,7 +188,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: rgb(91, 2, 0);
+    background-color: #361313;
     color: white;
     padding: 2rem 0;
     margin-top: 2rem;
