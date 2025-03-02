@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff');
+@import url('https://fonts.cdnfonts.com/css/pricedown');
 /* Reset y estilos generales */
 * {
     margin: 0;
@@ -24,9 +26,9 @@ body {
 
 /* Header y navegación */
 header {
-    background-color: #361313;
-    color: #361313;
-    padding: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px;
     position: fixed;
     width: 100%;
     top: -10px;
@@ -80,8 +82,14 @@ header h1 {
     height: auto; /* Mantén la proporción de la imagen */
 }
 .logo3 {
-    width: 250px; /* Ajusta el ancho de la imagen */
+    width: 200px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantén la proporción de la imagen */
+}
+.logo4 {
+    text-align: center;
+    width: 1000px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 8px;
 }
 
 .nav-links {
@@ -136,12 +144,17 @@ main {
 }
 
 .card {
-    background-color: #9e4444;
+    background-color: #B09A5B;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
 }
-
+.card2 {
+    background-color: #ffbb00;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
 .card h2 {
     margin-bottom: 0.5rem;
 }
@@ -188,7 +201,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #361313;
+    background-color: #000000;
     color: white;
     padding: 2rem 0;
     margin-top: 2rem;
@@ -228,7 +241,7 @@ footer {
     margin-top: 2rem;
     text-align: center;
     padding-top: 1rem;
-    border-top: 1px solid #374151;
+    border-top: 1px solid #ffffff;
 }
 
 /* Responsive */
@@ -246,7 +259,6 @@ footer {
         margin-right: 1rem;
     }
 }
-/* Estilos existentes ... */
 
 /* Estilos para la página de noticias */
 .news-grid {
@@ -301,7 +313,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* Styles for Events page */
+/* Estilos para eventos de la pagina */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -332,7 +344,7 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* Styles for Jobs page */
+/* Estilos de la pagina de Empleos */
 .job-search {
     margin-bottom: 2rem;
 }
@@ -360,11 +372,11 @@ footer {
 
 .job-department {
     font-weight: bold;
-    color: #3B82F6;
+    color: #dbc200;
     margin-bottom: 0.5rem;
 }
 
-/* Styles for Transparency page */
+/* Estilos de la pagina de Transparencia */
 .transparency-categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -401,7 +413,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-/* Responsive adjustments */
+/* Ajustes */
 @media (max-width: 768px) {
     .search-form {
         flex-direction: column;
@@ -430,3 +442,272 @@ footer {
     border-radius: 5px;
     cursor: pointer;
   }
+  section {
+    padding: 90px 0 0px 0;
+    position: relative;
+}*/
+
+.dark-scheme section {
+    background: #171A1D; 
+}
+
+section.no-bg,
+#content.no-bg {
+    background: none !important;
+}
+
+.de-gradient-edge-top{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.dark-scheme .de-gradient-edge-top{
+    background: linear-gradient(180deg, rgba(23,26,29,1) 0%, rgba(23,26,29,0) 100%);
+}
+
+.de-gradient-edge-bottom{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.dark-scheme .de-gradient-edge-bottom{
+    background: linear-gradient(0deg, rgba(23,26,29,1) 0%, rgba(23,26,29,0) 100%);
+}
+
+.bgcolor-variation {
+    background: #f6f6f6;
+}
+
+.overlay-gradient {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    padding: 90px 0 90px 0;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, var(--primary-color-2), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.de-navbar-left .container-fluid .container {
+    width: 100%;
+}
+
+.de-navbar-left section {
+    padding: 70px;
+}
+
+.de_light section {
+    background: #ffffff;
+}
+
+.section-fixed {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.full-height {
+    overflow: hidden;
+}
+
+#particles-js{
+    width:100%;
+    display:block;
+    height:100%;
+    position:absolute;
+    z-index:0;
+}
+#particles-js.fixed{
+    position:fixed;
+}
+
+.text_top {
+    position: relative;
+    z-index: 1000;
+}
+/*Boton desplegable*/
+.dropdown {
+    font-size: medium;
+    position: fixed;
+    left: 1250px;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 1001; /* Para asegurar que está por encima del header fijo */
+}
+
+.dropdown-button {
+    font-family: 'Gotham Black', sans-serif;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    left: 0;
+    margin-top: 0;
+    min-width: 200px; /* Un poco más ancho para mejor legibilidad */
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #b8b8b8;
+}
+
+.show {
+    display: block;
+}
+
+/* Tema oscuro */
+.dark-theme .dropdown-button {
+    background-color: #2d3748;
+    color: white;
+}
+
+.dark-theme .dropdown-content {
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+}
+
+.dark-theme .dropdown-content a {
+    color: #e2e8f0;
+}
+
+.dark-theme .dropdown-content a:hover {
+    background-color: #2d3748;
+}
+
+/* Icono de flecha */
+.arrow-icon {
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+.dropdown-button[aria-expanded="true"] .arrow-icon {
+    transform: rotate(-135deg);
+}
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: -250px;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 45px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidebar-icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    transform: translateY(-50%);
+    z-index: 1002;
+    transition: 0.3s;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.dark-theme .sidebar {
+    background-color: #2d3748;
+}
+
+.dark-theme .sidebar a {
+    color: #e2e8f0;
+}
+
+.dark-theme .sidebar a:hover {
+    color: #fff;
+}
+
+.dark-theme .openbtn {
+    background-color: #2d3748;
+}
